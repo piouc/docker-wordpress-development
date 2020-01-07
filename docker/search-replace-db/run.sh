@@ -1,0 +1,2 @@
+#!/bin/bash
+./wait-for-it/wait-for-it.sh -h "$DB_HOST" -p 3306 -t 0 -- php Search-Replace-DB/srdb.cli.php --host "$DB_HOST" --name "$DB_NAME" --user "$DB_USER" --pass "$DB_PASSWORD" --search "$SEARCH" --replace "$REPLACE"
